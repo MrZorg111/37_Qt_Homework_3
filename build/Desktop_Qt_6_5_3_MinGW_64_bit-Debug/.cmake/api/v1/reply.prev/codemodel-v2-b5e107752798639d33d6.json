@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-ccd511ad8b254ca68f01.json",
+					"jsonFile" : "directory-.-Debug-784a42ab795d64bd9bf5.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -92,7 +92,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "app37_QT_Homework_3::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-app37_QT_Homework_3-Debug-5d040017fe6b148beda4.json",
+					"jsonFile" : "target-app37_QT_Homework_3-Debug-55e11067c2db2398e33c.json",
 					"name" : "app37_QT_Homework_3",
 					"projectIndex" : 0
 				},

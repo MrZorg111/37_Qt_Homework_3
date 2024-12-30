@@ -27,29 +27,78 @@ Window {
     Item {
         id:myItem
         property int volume: 0
+        property int num
         property string channel
         property string tempo
+        property bool flag_channel: false
     }
 
     Timer {
         id: timer
-        interval: 1500
+        interval: 2000
         running: false
         repeat: true
 
         onTriggered: {
             if(myItem.channel.length != 2) {
-                myItem.tempo = myItem.channel
-                myItem.channel = "0" + myItem.tempo
-                timer.running = false
+                if(parseInt(myItem.channel) === 0) {
+                    myItem.channel = "0 "
+                }
+                else {
+                    myItem.tempo = myItem.channel
+                    myItem.channel = "0" + myItem.tempo
+                    timer.running = false
+                }
+                myItem.flag_channel = true
             }
         }
     }
 
-    function setButton1() {
+    function setButton(num) {
+        if(myItem.flag_channel == true) {
+            myItem.flag_channel = false
+            myItem.channel = ""
+        }
+
         if(myItem.channel.length <= 1) {
-            myItem.channel += "1"
+            myItem.channel += num
             timer.running = true
+        }
+        else {
+            console.log("У нас пока доступно 99 каналов")
+        }
+    }
+
+    function setUpChannel() {
+        timer.running = false
+        if(parseInt(myItem.channel) <= 98) {
+
+            parseInt(myItem.channel++)
+            myItem.flag_channel = true;
+
+            if(parseInt(myItem.channel) < 10) {
+                timer.running = true
+            }
+        }
+        else {
+            console.log("У нас пока доступно 99 каналов")
+            timer.running = false
+        }
+    }
+
+    function setDownChannel() {
+        timer.running = false
+        if(parseInt(myItem.channel) > 0) {
+            parseInt(myItem.channel--)
+            myItem.flag_channel = true;
+
+            if(parseInt(myItem.channel) < 10) {
+                timer.running = true
+            }
+        }
+        else {
+            myItem.channel = "0"
+            timer.running = false
         }
     }
 
@@ -76,7 +125,7 @@ Window {
             font.pixelSize: 15
         }
 
-        onClicked: setButton1()
+        onClicked: setButton(1)
 
         anchors.top: parent.top
         anchors.topMargin: 50
@@ -107,6 +156,7 @@ Window {
             font.pixelSize: 15
         }
 
+        onClicked: setButton(2)
 
         anchors.top: parent.top
         anchors.topMargin: 50
@@ -137,6 +187,7 @@ Window {
             font.pixelSize: 15
         }
 
+        onClicked: setButton(3)
 
         anchors.top: parent.top
         anchors.topMargin: 50
@@ -167,6 +218,7 @@ Window {
             font.pixelSize: 15
         }
 
+        onClicked: setButton(4)
 
         anchors.top: myButton1.bottom
         anchors.topMargin: 15
@@ -197,6 +249,7 @@ Window {
             font.pixelSize: 15
         }
 
+        onClicked: setButton(5)
 
         anchors.top: myButton2.bottom
         anchors.topMargin: 15
@@ -227,6 +280,7 @@ Window {
             font.pixelSize: 15
         }
 
+        onClicked: setButton(6)
 
         anchors.top: myButton3.bottom
         anchors.topMargin: 15
@@ -257,6 +311,7 @@ Window {
             font.pixelSize: 15
         }
 
+        onClicked: setButton(7)
 
         anchors.top: myButton4.bottom
         anchors.topMargin: 15
@@ -287,6 +342,7 @@ Window {
             font.pixelSize: 15
         }
 
+        onClicked: setButton(8)
 
         anchors.top: myButton5.bottom
         anchors.topMargin: 15
@@ -317,6 +373,7 @@ Window {
             font.pixelSize: 15
         }
 
+        onClicked: setButton(9)
 
         anchors.top: myButton6.bottom
         anchors.topMargin: 15
@@ -347,6 +404,7 @@ Window {
             font.pixelSize: 15
         }
 
+        onClicked: setButton(0)
 
         anchors.top: myButton8.bottom
         anchors.topMargin: 15
@@ -376,6 +434,7 @@ Window {
             font.pixelSize: 15
         }
 
+        onClicked: setUpChannel()
 
         anchors.top: myButton7.bottom
         anchors.topMargin: 120
@@ -398,7 +457,6 @@ Window {
             radius: 15
         }
 
-
         Text {
             anchors.centerIn: myChannelDown
             text: "Channel \n      -"
@@ -406,6 +464,7 @@ Window {
             font.pixelSize: 15
         }
 
+        onClicked: setDownChannel()
 
         anchors.top: myChannelUp.bottom
         anchors.topMargin: 15

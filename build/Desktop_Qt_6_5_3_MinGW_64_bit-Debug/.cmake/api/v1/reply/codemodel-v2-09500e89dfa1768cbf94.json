@@ -1,0 +1,169 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-784a42ab795d64bd9bf5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "37_QT_Homework_3",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Debug-54f13416a52423bcf141.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Debug-679275c7fc7672faa4b2.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_module-Debug-5a1b6a7e7855b0f6e655.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-955b244c9b80eb33f7b2.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app37_QT_Homework_3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app37_QT_Homework_3-Debug-b4402713f141cfce7a0a.json",
+					"name" : "app37_QT_Homework_3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app37_QT_Homework_3_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app37_QT_Homework_3_autogen-Debug-cadc8d0dd99297b3bd17.json",
+					"name" : "app37_QT_Homework_3_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app37_QT_Homework_3_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app37_QT_Homework_3_autogen_timestamp_deps-Debug-b7f46588493b1d4bd86c.json",
+					"name" : "app37_QT_Homework_3_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app37_QT_Homework_3_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app37_QT_Homework_3_qmlimportscan-Debug-bf9a9692be4a4252c006.json",
+					"name" : "app37_QT_Homework_3_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app37_QT_Homework_3_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app37_QT_Homework_3_qmllint-Debug-dcf92695916a2e9901ea.json",
+					"name" : "app37_QT_Homework_3_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app37_QT_Homework_3_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app37_QT_Homework_3_qmllint_json-Debug-3d34b329d656221ff4c7.json",
+					"name" : "app37_QT_Homework_3_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app37_QT_Homework_3_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app37_QT_Homework_3_qmllint_module-Debug-dd9a48216c4c26fe489e.json",
+					"name" : "app37_QT_Homework_3_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app37_QT_Homework_3_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app37_QT_Homework_3_qmltyperegistration-Debug-5af644f4c388d6cac19a.json",
+					"name" : "app37_QT_Homework_3_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "app37_QT_Homework_3_tooling::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-app37_QT_Homework_3_tooling-Debug-006d9b65fdca4743ff37.json",
+					"name" : "app37_QT_Homework_3_tooling",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/yodji/Desktop/37_QT_Homework_3/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug",
+		"source" : "C:/Users/yodji/Desktop/37_QT_Homework_3"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
