@@ -1,0 +1,5 @@
+module 37_QT_Homework_3
+typeinfo app37_QT_Homework_3.qmltypes
+prefer :/qt/qml/37_QT_Homework_3/
+Main 1.0 Main.qml
+

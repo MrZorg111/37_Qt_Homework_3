@@ -1,0 +1,14 @@
+-rootPath
+C:/Users/yodji/Desktop/37_QT_Homework_3
+-cmake-output
+-output-file
+C:/Users/yodji/Desktop/37_QT_Homework_3/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qt_plugins/Qt6_QmlPlugins_Imports_app37_QT_Homework_3.cmake
+-importPath
+C:/Users/yodji/Desktop/37_QT_Homework_3/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/37_QT_Homework_3
+-importPath
+C:/Users/yodji/Desktop/37_QT_Homework_3/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug
+-importPath
+P:/Qt/6.5.3/mingw_64/./qml
+-qrcFiles
+C:/Users/yodji/Desktop/37_QT_Homework_3/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.rcc/qmake_37_QT_Homework_3.qrc
+C:/Users/yodji/Desktop/37_QT_Homework_3/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.rcc/app37_QT_Homework_3_raw_qml_0.qrc
