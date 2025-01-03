@@ -65,6 +65,7 @@ Window {
             timer.running = true
         }
         else {
+            console.log("У нас пока доступно 99 каналов")
             myItem.channel = ""
             setButton(num)
         }
