@@ -65,7 +65,6 @@ Window {
             timer.running = true
         }
         else {
-            console.log("У нас пока доступно 99 каналов")
             myItem.channel = ""
             setButton(num)
         }
@@ -101,6 +100,24 @@ Window {
         else {
             myItem.channel = "0"
             timer.running = false
+        }
+    }
+
+    function setVolumeUp() {
+        if(myItem.volume < 100) {
+            myItem.volume += 10
+        }
+        else {
+            console.log("Громкость максимальна!")
+        }
+    }
+
+    function setVolumeDown() {
+        if(myItem.volume > 0) {
+            myItem.volume -= 10
+        }
+        else {
+            console.log("Звук выключен!")
         }
     }
 
@@ -497,6 +514,7 @@ Window {
             font.pixelSize: 15
         }
 
+        onClicked: setVolumeUp()
 
         anchors.top: myButton9.bottom
         anchors.topMargin: 120
@@ -527,6 +545,7 @@ Window {
             font.pixelSize: 15
         }
 
+        onClicked: setVolumeDown()
 
         anchors.top: myVolumeUp.bottom
         anchors.topMargin: 15
